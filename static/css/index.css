@@ -1,0 +1,81 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #ffdede;
+    background-image: linear-gradient(
+      179deg,
+      #ffdede 0%,
+      #8bc6ec 100%,
+      #9599e2 100%
+    );
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .bg-storm {
+    background: linear-gradient(180deg, #ffdede 0%, #8bc6ec 25%, #3f5966, black);
+    background-size: 100% 400%;
+    animation: anim-storm 0.75s forwards;
+    height: 100vh;
+  }
+  
+  @keyframes anim-storm {
+    0% {
+      background-position: 50% 0%;
+    }
+    100% {
+      background-position: 50% 100%;
+    }
+  }
+  
+  .bg-storm-reverse {
+    background: linear-gradient(180deg, #ffdede 0%, #8bc6ec 25%, #3f5966, black);
+    background-size: 100% 400%;
+    background-position: 50% 100%;
+    animation: anim-storm-reverse 0.75s forwards;
+    height: 100vh;
+  }
+  
+  @keyframes anim-storm-reverse {
+    0% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 50% 0%;
+    }
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+  /* hide scrollbar but allow scrolling */
+  body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+  }
+  
+  body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+  
+  .header-container {
+    user-select: none;
+  }
+  
+  .full-screen {
+    min-height: 100vh;
+  }
+  
